@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import 'styles/Navbar.css'
-import { ReactComponent as HamOpen } from 'images/hamOpen.svg'
-import { ReactComponent as HamClose } from 'images/hamClose.svg'
+import { ReactComponent as Ham } from 'images/ham.svg'
 import { ReactComponent as HomeIcon } from 'images/home.svg'
 import { ReactComponent as Bookmark } from 'images/bookmark.svg'
 import { ReactComponent as Dark } from 'images/darkMode.svg'
@@ -41,6 +40,14 @@ const IconWrapper = styled.div`
   }
 `
 
+const RotatedIcon = styled.div`
+  transition: transform .5s;
+  margin-bottom: 38px;
+  margin-top: 28px;
+  margin-left: 28px;
+  ${props => props.rotate && 'transform: rotate(90deg);'}
+`
+
 const IconText = styled.span`
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -74,7 +81,9 @@ const Navbar = () => {
         style={{marginBottom: 38, marginTop: 28}} 
         onClick={() => { setIsExpanded(prev => !prev) }}
       > */}
-        <HamOpen style={{marginBottom: 38, marginTop: 28, marginLeft: 28}}/>
+      <RotatedIcon rotate={isExpanded}>
+        <Ham/>
+      </RotatedIcon>
       {/* </IconWrapper> */}
       <IconWrapper 
         isActive={pathname==='/'}
