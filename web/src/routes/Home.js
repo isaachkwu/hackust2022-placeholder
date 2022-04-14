@@ -191,7 +191,7 @@ const Home = () => {
         <Button
           className='submit'
           onClick={handleTextSubmit}
-        >Submit</Button>
+        >Simplify</Button>
       </div>
       <div className='result'>
         {
