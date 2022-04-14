@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: local('Dosis-Medium'), url(./fonts/Dosis/Dosis-Medium.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Dosis-ExtraBold';
+  src: local('Dosis-ExtraBold'), url(./fonts/Dosis/Dosis-ExtraBold.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Hind-Siliguri-Light';
+  src: local('Hind-Siliguri-Light'), url(./fonts/Hind_Siliguri/HindSiliguri-Light.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Hind-Siliguri-Regular';
+  src: local('Hind-Siliguri-Regular'), url(./fonts/Hind_Siliguri/HindSiliguri-Regular.ttf) format('truetype')
+}

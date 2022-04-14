@@ -1,0 +1,14 @@
+main.wordbank {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >div {
+    font-family: Dosis-Medium;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em; 
+  }
+}
